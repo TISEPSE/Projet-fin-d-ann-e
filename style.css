@@ -1,0 +1,61 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    height: 100vh;
+    width: 100% ;
+    background-color: #0e69d8;
+}
+
+.navbar{
+    display: flex;
+    justify-content: center;
+    padding: 0.5rem;
+}
+
+.navbar img{
+    height: 1.5rem;
+    width: 1.5rem;
+}
+
+.navbar a{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    margin: 0 0.8rem;
+    font-size: 0.9rem;
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.navbar .offre-alternance{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.explain{
+    border: 3px solid white;
+    height: 100px;
+    margin-bottom: 50px;
+}
+
+input{
+    width: 70%;
+    padding: 1.4rem;
+    margin: 0 auto;
+    display: block;
+    border-radius: 50px;
+    border: none;
+    border: 2px solid black;    
+}
+
+::placeholder{
+    color: rgb(0, 0, 0, 0.5); 
+    font-size: 1.2em;
+    font-weight: 600;
+}
