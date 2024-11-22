@@ -88,12 +88,21 @@ input{
     display: block;
     border-radius: 50px;
     border: none;
-    border: 2px solid black;   
+    border: 3px solid rgb(31, 31, 31);   
     box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+
+}
+
+input:focus::placeholder{
+color: #FEFEFE;
+}
+
+input:focus{
+    outline: none;
 }
 
 ::placeholder{
-    color: rgb(0, 0, 0, 0.5); 
+    color: rgb(0, 0, 0, 0.4); 
     font-weight: 600;
-    padding-top: 50px;
+    transition: 0.2s;
 }
