@@ -5,20 +5,39 @@
 }
 
 body{
+    background: rgb(26,48,107);
+    background: linear-gradient(180deg, rgba(26,48,107,1) 0%, rgba(14,105,216,1) 100%);
+    background-repeat:no-repeat;
     height: 100vh;
-    width: 100% ;
-    background-color: #0e69d8;
+
 }
+
+footer{
+    color: #ffffffcc;
+    position: fixed;
+    bottom: 3px;
+    left: 40%;
+    background: transparent;
+    font-family: sans-serif ;
+  }
 
 .navbar{
     display: flex;
     justify-content: center;
-    padding: 0.5rem;
+    padding: 1rem 0;
+}
+
+.container-nav{
+    background-color: #0e69d8;
+    padding: 0.7rem;
+    border-radius: 50px;
+    display: flex;
 }
 
 .navbar img{
     height: 1.5rem;
     width: 1.5rem;
+    margin-bottom: 0.3rem;
 }
 
 .navbar a{
@@ -26,10 +45,17 @@ body{
     align-items: center;
     flex-direction: column;
     color: white;
-    margin: 0 0.8rem;
+    margin: 0 1rem;
     font-size: 0.9rem;
+    font-weight: 400;
     text-decoration: none;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    transition: 0.2s;
+}
+
+.navbar a:hover{
+    color: #1A306B;
+
 }
 
 .navbar .offre-alternance{
@@ -38,24 +64,36 @@ body{
     align-items: center;
 }
 
-.explain{
-    border: 3px solid white;
-    height: 100px;
-    margin-bottom: 50px;
+h1{
+    color: #FAF7F0;
+    text-align: center;
+    font-size: 2.5rem;
+    display: block;
+    margin: 6rem auto;
+    max-width: 85rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.span-h1{
+    color: #0be0a0;
 }
 
 input{
-    width: 70%;
-    padding: 1.4rem;
-    margin: 0 auto;
+    width: 65%;
+    height: 4rem;
+    font-size:1em;
+    position: absolute;
+    top: 45%;
+    left: 20rem;
     display: block;
     border-radius: 50px;
     border: none;
-    border: 2px solid black;    
+    border: 2px solid black;   
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
 }
 
 ::placeholder{
     color: rgb(0, 0, 0, 0.5); 
-    font-size: 1.2em;
     font-weight: 600;
+    padding-top: 50px;
 }
