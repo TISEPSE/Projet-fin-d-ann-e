@@ -20,6 +20,12 @@ footer{
     font-family: sans-serif ;
   }
 
+
+  /*Section en haut de la page pour laisse lespace au résultat de recherche plus tard*/
+.recherche{
+    height: 100vh;
+}
+
 .navbar{
     display: flex;
     justify-content: center;
