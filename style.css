@@ -7,8 +7,6 @@
 body{
     background: linear-gradient(180deg, rgb(40, 65, 133) 0%, rgba(14,105,216,1) 100%);
     background-repeat:no-repeat;
-    height: 100vh;
-
 }
 
 footer{
@@ -20,8 +18,7 @@ footer{
     font-family: sans-serif ;
   }
 
-
-  /*Section en haut de la page pour laisse lespace au résultat de recherche plus tard*/
+  /*Section en haut de la page pour laisse lespace au résultat de recherche plus tard */
 .recherche{
     height: 100vh;
 }
@@ -94,34 +91,38 @@ h1{
 }
 
 /* Container qui centre les deux input au milieu de l'écran */
-.container-input{
+.container-input-filtre{
     display: flex;
+    flex-direction: column;
+    position: relative;
+    align-items: center;
     justify-content: center;
+    width: 60rem;
+    background-color: red;
+    margin: 0 auto;
 }
 
-.input1{
-    width: 23rem;
-    height: 4rem;
+.container-input{
+    background-color: blue;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 2rem;
+}
+
+.input1, .input2{
+    width: 30rem;
+    height: 5rem;
     font-size:1em;
     display: block;
-    border-radius: 50px 0px 0px 50px;
+    border-radius: 10px 0px 0px 10px;
     border: 3px solid rgb(31, 31, 31);   
     box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
-
 }
 
 .input2{
-    width: 23rem;
-    height: 4rem;
-    font-size:1em;
-    display: block;
-    border-radius:  0px 50px 50px 0px;
-    border: 3px solid rgb(31, 31, 31);  
+    border-radius:  0px 10px 10px 0px;
     border-left: none; 
-    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
-
 }
-
 
 input:focus::placeholder{
 color: #FEFEFE;
@@ -135,4 +136,29 @@ input:focus{
     color: rgb(0, 0, 0, 0.4); 
     font-weight: 600;
     transition: 0.2s;
+}
+
+.result{
+    height: 100vh;
+}
+
+.container-filtre{  
+  align-self: flex-start;
+}
+
+.container-filtre button{
+    height: 2.5rem;
+    width: 7rem;
+    text-align: left;
+    padding-left: 0.25rem;
+    font-size: 1.1rem;
+    border-radius: 4px;
+    border: 1px solid rgb(173, 173, 173);
+    transition: 0.2s;
+}
+
+.container-filtre button:hover{
+    background-color: #122760;
+    color: #ffff;
+    border-color: #122760;
 }
