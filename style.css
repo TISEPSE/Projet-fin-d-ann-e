@@ -90,7 +90,7 @@ h1{
     color: #0be0a0;
 }
 
-/* Container qui centre les deux input au milieu de l'écran */
+/* Container qui centre les deux input et les filtres au milieu de l'écran */
 .container-input-filtre{
     display: flex;
     flex-direction: column;
@@ -102,6 +102,7 @@ h1{
     margin: 0 auto;
 }
 
+/* Container qui aligne horizontalement les inputs */
 .container-input{
     background-color: blue;
     display: flex;
@@ -146,16 +147,33 @@ input:focus{
   align-self: flex-start;
 }
 
+
 .container-filtre button{
-    height: 2.5rem;
-    width: 7rem;
-    text-align: left;
-    padding-left: 0.25rem;
+    height: 2.4rem;
+    width: 6.9rem;
+    text-align: center;
     font-size: 1.1rem;
     border-radius: 4px;
+    margin-right: 0.9rem;
     border: 1px solid rgb(173, 173, 173);
     transition: 0.2s;
 }
+
+.container-filtre button img{
+    height: 1.15rem;
+    padding-left: 0.5rem;
+    padding-top: 7px;
+}
+
+/* Instruction de style pour changer la couleur des sgv */
+.svg-img {
+    transition: filter 0.2s ease;
+  }
+  
+  /* Filtre a chnager en fonction des sgv */
+  .filtre1:hover .svg-img {
+    filter: brightness(100%) saturate(100%) invert(100%) sepia(0%) hue-rotate(0deg) contrast(100%);
+  }  
 
 .container-filtre button:hover{
     background-color: #122760;
