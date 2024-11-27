@@ -24,6 +24,7 @@ footer{
     display: flex;
     justify-content: center;
     padding: 1rem 0;
+    margin-bottom: 2rem;
 }
 
 .container-nav{
@@ -64,7 +65,6 @@ padding-bottom: 3rem;
 
 .navbar a:hover{
     color: #1A306B;
-
 }
 
 .navbar .offre-alternance{
@@ -87,16 +87,18 @@ h1{
     color: #0be0a0;
 }
 
+/* Container qui centre les deux input au milieu de l'écran */
+.container-input{
+    display: flex;
+    justify-content: center;
+}
+
 .input1{
     width: 23rem;
     height: 4rem;
     font-size:1em;
-    position: absolute;
-    top: 45%;
-    left: 43rem;
     display: block;
-    border-radius: 50px;
-    border: none;
+    border-radius: 50px 0px 0px 50px;
     border: 3px solid rgb(31, 31, 31);   
     box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
 
@@ -106,13 +108,10 @@ h1{
     width: 23rem;
     height: 4rem;
     font-size:1em;
-    position: absolute;
-    top: 45%;
-    left: 17rem;
     display: block;
-    border-radius: 50px;
-    border: none;
-    border: 3px solid rgb(31, 31, 31);   
+    border-radius:  0px 50px 50px 0px;
+    border: 3px solid rgb(31, 31, 31);  
+    border-left: none; 
     box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
 
 }
