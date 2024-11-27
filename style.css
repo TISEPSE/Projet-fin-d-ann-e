@@ -28,14 +28,14 @@ footer{
 
 .container-nav{
     background-color: #122760;
-    padding: 0.7rem;
+    padding: 0.5rem;
     border-radius: 50px;
     display: flex;
 }
 
 .navbar img{
-    height: 1.5rem;
-    width: 1.5rem;
+    height: 1.3rem;
+    width: 1.3rem;
     margin-bottom: 0.3rem;
 }
 
@@ -44,8 +44,8 @@ footer{
     align-items: center;
     flex-direction: column;
     color: white;
-    margin: 0 1rem;
-    font-size: 0.9rem;
+    margin: 0 0.9rem;
+    font-size: 0.8rem;
     font-weight: 400;
     padding-top: 5px;
     text-decoration: none;
@@ -56,10 +56,10 @@ footer{
 .navbar a:nth-child(1) {
 background-color: #0e69d8 ;
 border-radius: 50px;
-height: 3rem;
-width: 5.5rem;
-padding-top: 5px;
-padding-bottom: 50px;
+height: 2rem;
+width: 5rem;
+padding-top: 5;
+padding-bottom: 3rem;
 }
 
 .navbar a:hover{
@@ -88,12 +88,12 @@ h1{
 }
 
 .input1{
-    width: 40%;
+    width: 23rem;
     height: 4rem;
     font-size:1em;
     position: absolute;
     top: 45%;
-    left: 15.5rem;
+    left: 43rem;
     display: block;
     border-radius: 50px;
     border: none;
@@ -101,6 +101,22 @@ h1{
     box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
 
 }
+
+.input2{
+    width: 23rem;
+    height: 4rem;
+    font-size:1em;
+    position: absolute;
+    top: 45%;
+    left: 17rem;
+    display: block;
+    border-radius: 50px;
+    border: none;
+    border: 3px solid rgb(31, 31, 31);   
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+
+}
+
 
 input:focus::placeholder{
 color: #FEFEFE;
